@@ -34,8 +34,10 @@ void quickSort(int h, int t) {
 			cout << con[m] << endl;
 			return;
 		}
-		quickSort(h, m - 1);
-		quickSort(m + 1, t);
+		else if (m > b)
+			quickSort(h, m - 1);
+		else
+			quickSort(m + 1, t);
 	}
 }
 
