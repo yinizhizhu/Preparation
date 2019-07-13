@@ -17,14 +17,17 @@ vector<vector<int> > con(N, vector<int>());
 3 1
 3 2
 3 3
+
 */
 
 bool find(int x) {
+	int i, j;
 	for (int i = 0; i < con[x].size(); i++) {
-		if (!visited[i]) {
-			visited[i] = 1;
-			if (nxt[i] == -1 || find(nxt[i])) {
-				nxt[i] = x;
+		j = con[x][i];
+		if (!visited[j]) {
+			visited[j] = 1;
+			if (nxt[j] == -1 || find(nxt[j])) {
+				nxt[j] = x;
 				return true;
 			}
 		}
