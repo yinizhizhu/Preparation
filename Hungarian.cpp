@@ -17,7 +17,6 @@ vector<vector<int> > con(N, vector<int>());
 3 1
 3 2
 3 3
-
 */
 
 bool find(int x) {
@@ -37,7 +36,7 @@ bool find(int x) {
 
 void match() {
 	int ans = 0;
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < m; i++) {
 		memset(visited, 0, sizeof(visited));
 		if (find(i)) ans++;
 	}

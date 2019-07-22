@@ -1,4 +1,3 @@
-
 void PostOrder(TreeNode *root) {
     TreeNode *p = root, *r = NULL;
     stack<TreeNode*> s;
